@@ -1,0 +1,28 @@
+.body {
+  background-color: rgb(23, 209, 209);
+}
+
+.btn {
+  background-color: black;
+  color: rgb(181, 163, 163);
+  font-weight: 300;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.label {
+  font-size: larger;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+}
+
+.row1 {
+  font-size: large;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 300;
+  color: white;
+  cursor: pointer;
+}
+
+.row1 :hover {
+  background-color: black;
+}
