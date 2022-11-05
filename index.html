@@ -14,22 +14,23 @@
 <body class="body">
 
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center header">
             <h1 class="col-md-7 text-center">Crypto Tracker</h1>
             <h4 class="col-md-7 text-center">By Dhaval</h4>
 
-            <div class="col-md-6 row justify-content-center">
+            <div class="col-md-6 row justify-content-center form">
                 <div class="col-10">
                     <form action="" id="searchForm">
                         <div class="form row">
                             <div class="col-12 form-group">
                                 <label class="label" for="xyz">Coin Type</label>
-                                <select name="coinType" id="xyz" class="form-control">
-                                    <option value="bitcoin">Bitcoin</option>
-                                    <option value="dogecoin">Dogecoin</option>
-                                    <option value="ethereum">Ethereum</option>
-                                    <option value="ripple">Ripple</option>
-                                    <option value="polygon">Polygon</option>
+                                <select name="coinType" id="xyz" class="form-control option">
+                                    <option class="option" value="bitcoin">Bitcoin</option>
+                                    <option class="option" value="dogecoin">Dogecoin</option>
+                                    <option class="option" value="ethereum">Ethereum</option>
+                                    <option class="option" value="ripple">Ripple</option>
+                                    <option class="option" value="polygon">Polygon</option>
+
                                 </select>
                             </div>
                         </div>
@@ -38,7 +39,7 @@
                 </div>
             </div>
             <div class="col-md-7 text-center row justify-content-center">
-                <table class="col-md-7 m-2" border="1px" id="show">
+                <table class="col-md-7 m-2 content " border="1px solid" id="show">
 
                 </table>
             </div>
