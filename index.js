@@ -11,6 +11,13 @@ form.addEventListener("submit", (e) => {
   fetchPrice(cType);
 });
 
+var today = new Date();
+var date =
+  today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
+var time =
+  today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+var dateTime = date + " " + time;
+
 const fetchPrice = async (cType) => {
   const info = await axios.get(
     ` https://api.coinstats.app/public/v1/coins/${cType}?currency=USD`
@@ -21,6 +28,7 @@ const fetchPrice = async (cType) => {
   const Change = info.data.coin.priceChange1d;
   const Base = info.data.coin.name;
   const Target = "USD";
+  const Time = dateTime;
 
   res.innerHTML = `<tr class = "row1">
   <td>
@@ -28,7 +36,7 @@ const fetchPrice = async (cType) => {
   </td>
   <td> Value </td>
 </tr>
-<tr>
+<tr> 
   <td>
       ${Base} 
   </td>
@@ -36,16 +44,22 @@ const fetchPrice = async (cType) => {
 </tr>
 <tr>
   <td>
-  Volume
+  Volume(24hrs)
   </td>
   <td> ${Volume} </td>
 </tr>
 <tr>
   <td>
-      Change
+      Change(24hrs)
   </td>
-  <td>${Change}</td>
-</tr>
+  <td>${Change} ${Target} </td>
+</tr> 
+<tr>
+  <td>
+      Time
+  </td>
+  <td>${Time}</td>
+</tr> 
 `;
 
   delay = setTimeout(() => fetchPrice(cType), 10000);
