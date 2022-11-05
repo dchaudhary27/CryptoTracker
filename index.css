@@ -1,14 +1,39 @@
 .body {
-  background-color: rgb(23, 209, 209);
+  font-size: 18px;
+  background-image: linear-gradient(to right top, #cbb700, #05440c, #0bf4b6);
+  height: 800px;
+}
+
+.header {
+  color: rgba(222, 221, 221, 0.811);
+}
+
+.form {
+  background-color: rgb(7, 242, 160);
+  color: black;
+  padding: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 5px;
 }
 
 .btn {
   background-color: black;
-  color: rgb(181, 163, 163);
+  color: rgb(236, 229, 229);
   font-weight: 300;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+.select {
+  background-color: #0a9476;
+  color: white;
+  cursor: pointer;
+}
+
+.option {
+  background-color: #095a48;
+  color: white;
+}
 .label {
   font-size: larger;
   font-family: "Times New Roman", Times, serif;
@@ -19,10 +44,12 @@
   font-size: large;
   font-family: "Times New Roman", Times, serif;
   font-weight: 300;
-  color: white;
+  color: rgb(248, 244, 244);
   cursor: pointer;
+  background-color: rgb(19, 153, 151);
 }
 
-.row1 :hover {
-  background-color: black;
+.content {
+  background-color: #659789;
+  color: black;
 }
