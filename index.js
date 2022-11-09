@@ -28,6 +28,7 @@ const fetchPrice = async (cType) => {
   const Change = info.data.coin.priceChange1d;
   const Base = info.data.coin.name;
   const Target = "USD";
+  const Target1 = "%";
   const Time = dateTime;
 
   res.innerHTML = `<tr class = "row1">
@@ -52,7 +53,7 @@ const fetchPrice = async (cType) => {
   <td>
       Change(24hrs)
   </td>
-  <td>${Change} ${Target} </td>
+  <td>${Change} ${Target1} </td>
 </tr> 
 <tr>
   <td>
