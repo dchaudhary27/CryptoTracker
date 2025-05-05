@@ -20,7 +20,7 @@ var dateTime = date + " " + time;
 
 const fetchPrice = async (cType) => {
   const info = await axios.get(
-    ` https://api.coinstats.app/public/v1/coins/${cType}?currency=USD`
+    ` https://api.coinstats.app/public/v1/coins/${cType}?currency=AMD`
   );
 
   const Price = info.data.coin.price;
